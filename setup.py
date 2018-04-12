@@ -2,11 +2,9 @@ from setuptools import setup
 
 setup(
     name='frames.py',
-    version='1',
+    version='0.0.1',
     packages=['frames'],
-    url='',
-    license='',
-    author='lj brown',
-    author_email='',
-    description='video and frames directory conversions'
+    url='https://github.com/browlm13/frames.git',
+    author='L.J. Brown',
+    description='', install_requires=['opencv-python']
 )
