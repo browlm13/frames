@@ -122,6 +122,7 @@ def to_video(input_frames_directory_path, output_video_path):
     :return: exit code
     """
     # write video
+    logger.info('\n\tWriting Video...')
     output_frame_paths_dict = get_frame_path_dict(input_frames_directory_path)
     min_frame, max_frame, continuous = min_max_frames(output_frame_paths_dict)
 
@@ -129,7 +130,7 @@ def to_video(input_frames_directory_path, output_video_path):
         ordered_frame_paths = []
         for frame in range(min_frame, max_frame + 1):
             ordered_frame_paths.append(output_frame_paths_dict[frame])
-            _write_mp4_video(ordered_frame_paths, output_video_path)
+        _write_mp4_video(ordered_frame_paths, output_video_path)
     else:
         logger.error("Video Frames Directory %s Not continuous")
 
