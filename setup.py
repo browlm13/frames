@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='frames.py',
+    name='frames',
     version='0.0.1',
     packages=['frames'],
     url='https://github.com/browlm13/frames.git',
